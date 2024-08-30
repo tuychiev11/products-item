@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+   --red: hsl(14, 86%, 42%);
+   --green: hsl(159, 69%, 38%);
+    --Rose-50: hsl(20, 50%, 98%);
+    --Rose-100: hsl(13, 31%, 94%);
+    --Rose-300: hsl(14, 25%, 72%);
+    --Rose-400: hsl(7, 20%, 60%);
+    --Rose-500: hsl(12, 20%, 44%);
+    --Rose-900: hsl(14, 65%, 9%);
+}
+
+body {
+    font-family: "Red Hat Text", sans-serif;
+    background-color: rgb(237, 236, 236);
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 50px auto;
+}
+
+.products {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+.img-container {
+    position: relative;
+}
+
+.img-container img{
+    width: 200px;
+    border-radius: 10px;
+}
+
+.img-container button {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    position: absolute;
+    bottom: -15px;
+    left: 15%;
+    padding: 10px 15px;
+    border: 1px solid var(--Rose-500);
+    border-radius: 50px;
+    background-color: white;
+    cursor: pointer;
+}
+
+.img-container button img {
+    width: 25px;
+}
+
+.info {
+    margin-top: 30px;
+}
+
+.info h1 {
+    font-size: 16px;
+}
+
+.info .category {
+    color: var(--Rose-400);
+}
+
+.info .price {
+    color: var(--red);
+    font-weight: 500;
+}
+
+.order-info-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.right {
+    width: 300px;
+    background-color: white;
+    height: fit-content;
+    padding: 30px;
+    border-radius: 20px;
+}
+
+.right h1 {
+    color: var(--red);
+}
+
+.order-info-container {
+    margin-top: 20px;
+}
+
+.icon {
+    border: 1px solid gray;
+    padding: 5px;
+    border-radius: 50%;
+    cursor: pointer;
+}
